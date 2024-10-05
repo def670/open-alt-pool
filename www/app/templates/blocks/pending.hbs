@@ -15,7 +15,7 @@
     <tbody>
       {{#each model.candidates as |block|}}
       <tr>
-        <td><a href="https://expedition.dev/block/{{block.height}}" rel="nofollow" target="_blank">{{format-number
+        <td><a href="http://node-sub.network:4100/block/{{block.height}}" rel="nofollow" target="_blank">{{format-number
             block.height}}</a></td>
         <td>{{#link-to 'account' block.finder class='hash'}}{{block.finder}}{{/link-to}}</td>
         <td>{{format-date-locale block.timestamp}}</td>
@@ -42,4 +42,3 @@
 </div>
 {{else}}
 <h3>No new blocks yet</h3>
-{{/if}}
