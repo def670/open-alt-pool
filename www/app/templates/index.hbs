@@ -5,15 +5,15 @@
         <div class="row">
           <h1 style="font-size: 24px">
             <div class="etc-green">
-              <strong><span class="logo-2">ETHW Pool</span></strong>
+              <strong><span class="logo-2">ALTcoin Pool</span></strong>
             </div>
           </h1>
         </div>
         <div class="row" style="padding:15px 5px;">
-          <strong>Min. payout threshold: {{config.PayoutThreshold}}</strong>, Payouts are continuos throughout the day.
+          <strong>Min. payout threshold: {{config.PayoutThreshold}}</strong>, Payouts on a 20 minute cycle.
           <br />
-          <span class="label label-success">PPLNS</span>/<span class="label label-danger">SOLO</span> Stable and
-          profitable pool with regular payouts.
+          <span class="label label-success">PPLNS</span>/<span class="label label-danger">SOLO</span> Select the desired 
+payout scheme from your miner account page.
         </div>
       </div>
       <div class="col-md-3 stats">
@@ -81,8 +81,7 @@
               <a href="#/help" class="ul-link">
                 <span class="ul ul-danger">stratum</span><br /><br />
               </a>
-              <code>{{config.StratumHost}}:{{config.StratumPort}}</code><br /> <br />
-              <code>Nicehash Europe password: #</code>
+              <code>stratum+tcp://{{config.StratumHost}}:{{config.StratumPort}}</code><br /> <br />
             </p>
           </div>
         </div>
